@@ -1,0 +1,13 @@
+﻿@page "/homework/{header?}"
+
+@if(Header == null)
+{
+    <h1 class="bg-primary text-white">Praca domowa</h1>
+}
+else
+{
+    <h1 class="bg-warning">@Header</h1>
+}
+
+<button class="btn btn-primary my-3" @onclick="GoToHome">Strona główna</button>
+
